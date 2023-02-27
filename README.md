@@ -41,6 +41,7 @@ The virtual machine should now start. Move on to installing Ubuntu.
 6. Select your timezone ("Chicago"). Click continue.
 7. Choose your name, computer name, username, and password ('demo' for all should be fine). You can also choose "Log in automatically". Click continue.
 8. Wait for the installation to finish.
+9. Click "restart now" when the installation is done and just hit "ENTER" when prompted to do so.
 
 ## Installing ROS
 Since we used Ubuntu 20.04, we will install ROS Noetic.
