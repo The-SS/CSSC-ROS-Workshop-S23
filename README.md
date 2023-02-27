@@ -45,7 +45,7 @@ The virtual machine should now start. Move on to installing Ubuntu.
 
 ## Installing ROS
 Since we used Ubuntu 20.04, we will install ROS Noetic.
-Follow [these instructions](http://wiki.ros.org/noetic/Installation/Ubuntu) to install ROS Noetic and go with the "Desktop-Full Install: (Recommended)" option.
+Follow [these instructions](http://wiki.ros.org/noetic/Installation/Ubuntu) to install ROS Noetic and go with the "Desktop-Full Install: (Recommended)" option. When doing step "1.5 Environment setup" follow instructions for Bash not zsh. 
 
 If you get an error related to your user not being part of the sudo users group, run the following commands in terminal replacing [username] by your user name (e.g. demo).
 ```
