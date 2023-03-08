@@ -1,3 +1,5 @@
-*/build/*
-*/devel/*
+ros_demo_workspaces/workspace/build/*
+ros_demo_workspaces/workspace/devel/*
+ros_demo_workspaces/workspace2/build/*
+ros_demo_workspaces/workspace2/devel/*
 *.catkin_workspace
