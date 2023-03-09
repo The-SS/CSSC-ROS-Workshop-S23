@@ -20,8 +20,8 @@ class DataSubscriber:
 class DecisionPublisher:
 	def __init__(self):
 		self.decision_pub = rospy.Publisher('decision', String, queue_size=1)
-		self.dmin = 0.9  # 0.9 meter minimum distance
-		self.pmin = 0.85 # 85% confidence
+		self.dmin = 0.85  # minimum distance
+		self.pmin = 0.80 # minimum confidence
 	def decide(self, data):
 		if data is None:
 			self.decision_pub.publish("No data yet >_<   >_<   >_<")
@@ -42,6 +42,8 @@ def main():
 	sub = DataSubscriber()
 	pub = DecisionPublisher()
 	
+	print('Data analyzer started.')
+	print('Use `rostopic echo /decision` to view the decisions.')
 	while not rospy.is_shutdown():
 		pub.decide(sub.data)
 		rate.sleep()
