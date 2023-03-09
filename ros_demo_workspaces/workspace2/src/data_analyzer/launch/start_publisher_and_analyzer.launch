@@ -1,0 +1,5 @@
+<launch>
+    <!-- Publisher -->
+    <node pkg="data_publisher" type="publisher_node.py" name="publisher_node" />
+    <node pkg="data_analyzer" type="safety_based_on_data.py" name="safety_analyzer" />
+</launch>
