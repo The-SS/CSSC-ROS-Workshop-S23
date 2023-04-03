@@ -1,0 +1,11 @@
+<launch>
+    <!-- Publisher -->
+    <group ns='sys1'>
+    <node pkg="data_publisher" type="publisher_node.py" name="publisher_node" />
+    <node pkg="data_analyzer" type="safety_based_on_data.py" name="safety_analyzer" />
+    </group>
+    <group ns='sys2'>
+    <node pkg="data_publisher" type="publisher_node.py" name="publisher_node" />
+    <node pkg="data_analyzer" type="safety_based_on_data.py" name="safety_analyzer" />
+    </group>
+</launch>
